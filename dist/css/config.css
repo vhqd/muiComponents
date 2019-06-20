@@ -1,0 +1,20 @@
+a {
+  color: #fff;
+}
+.mui-btn-primary {
+  background: #05856B;
+  border: 1px solid #05856B;
+}
+.mui-bar {
+  background: #05856B;
+}
+.mui-title,
+.mui-bar .mui-btn-link {
+  color: #fff;
+}
+.mui-bar-tab .mui-tab-item {
+  color: #ccc;
+}
+.mui-bar-tab .mui-tab-item.mui-active {
+  color: #fff;
+}

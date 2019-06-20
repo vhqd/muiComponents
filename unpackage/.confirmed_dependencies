@@ -1,0 +1,17 @@
+{
+	"index.html": {
+		"refer": [
+			"a.html",
+			"components/a.html",
+			"components/embed.html",
+			"resources/plugins/embed.html"
+		],
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"static/js/mui.min.js",
+			"static/js/require.min.js",
+			"static/css/mui.min.css"
+		]
+	}
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="./css/mui.min.css" />
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<button id="submit" class="mui-btn mui-btn-blue mui-btn-link mui-pull-right">发送</button>
+			<h1 class="mui-title">bb</h1>
+		</header>
+		<div class="mui-content">
+			bbb
+			<div id="newpage">
+				<p>新页面</p>
+			</div>
+		</div>
+		<script src="./js/mui.min.js"></script>
+		<script>
+			mui.init({
+ 　　　　　　　　swipeBack: true, //启用右滑关闭功能
+ 　　　　　　　　beforeback: function(){//监听物理返回按键的方法
+ 　　　　　　　　alert('触发b页面返回')
+ 　　　　　　　　return true;
+ 　　　　　　　　}
+ 　　　　　　});
+			mui('#newpage').on('tap', 'p', function() {
+				/*var json={time:new Date().getTime()};
+				window.history.pushState('a页面',"","c.html");*/
+				mui.openWindow({
+					url: "c.html",
+					id: "cnewpage",
+					styles: {
+						popGesture: "close",
+						statusbar: {
+							background: "#f7f7f7"
+						}
+					},
+				});
+			})
+			 window.onpopstate=function()
+			 {
+			      // 获得存储在该历史记录点的json对象
+			      var json=window.history.state;
+			      console.log(json);
+			 }
+		</script>
+	</body>
+</html>

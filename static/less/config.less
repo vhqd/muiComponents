@@ -1,0 +1,41 @@
+//按钮颜色    
+@bnc-main-color: #05856B;//主色调
+
+@bnc-white-color:#fff;
+
+@bnc-light-grey-color:#ccc;
+
+////解决Unable to preventDefault inside passive控制台报错问题(滚动会失效)
+//*{ touch-action: none; }
+
+a{
+    color: @bnc-white-color;
+}
+//按钮颜色
+.mui-btn-primary{
+    background: @bnc-main-color;
+    border:1px solid @bnc-main-color;
+}
+//顶部导航
+.mui-bar{
+    background: @bnc-main-color;
+}
+//顶部标题
+.mui-title,.mui-bar .mui-btn-link{
+    color: @bnc-white-color;
+}
+
+//底部tabbar颜色（未触发）
+.mui-bar-tab .mui-tab-item{
+    color: @bnc-light-grey-color;
+}
+//（active触发状态）
+.mui-bar-tab .mui-tab-item.mui-active{
+    color: @bnc-white-color;
+}
+
+//侧滑背景文字颜色
+//.mui-off-canvas-left,.mui-table-view-inverted{
+//  background: @bnc-white-color;
+//  color: @bnc-light-grey-color;
+//}
