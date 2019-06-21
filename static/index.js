@@ -1,5 +1,7 @@
-define(["mui"],function(){
+define(["mui","base"],function(mui,base){
 	mui.init();
+	console.log('加载base模块：');
+	console.log(base);
 	mui('#padded-box').on('tap', '.openurl', function() {
 		mui.openWindow({
 			url: "resources/plugins/embed.html",
@@ -63,13 +65,13 @@ define(["mui"],function(){
 		}
 	});
 	 //主界面‘显示侧滑菜单’按钮的点击事件
-	document.getElementById('offCanvasShow').addEventListener('tap', function() {
+	/*document.getElementById('offCanvasShow').addEventListener('tap', function() {
 		offCanvasWrapper.offCanvas('show');
-	});
+	});*/
 	 //菜单界面，‘关闭侧滑菜单’按钮的点击事件
-	document.getElementById('offCanvasHide').addEventListener('tap', function() {
+	/*document.getElementById('offCanvasHide').addEventListener('tap', function() {
 		offCanvasWrapper.offCanvas('close');
-	});
+	});*/
 	 //主界面和侧滑菜单界面均支持区域滚动；
 	mui('#offCanvasSideScroll').scroll();
 	mui('#offCanvasContentScroll').scroll();

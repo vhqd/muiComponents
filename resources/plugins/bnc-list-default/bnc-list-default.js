@@ -1,14 +1,13 @@
 define(function(){
 	var html = ''
 	var obj = {
-		init:function(data,type){
+		init:function(data,type,index){
 			switch (parseInt(type)){
 				case 1:
-					html = `
-					<ul class="mui-table-view">
-						 <li class="mui-table-view-cell">Item 1</li>
-					</ul>
-					`
+					html = 
+					'<ul class="mui-table-view">'+
+					'	 <li class="mui-table-view-cell">Item '+index+'</li>'+
+					'</ul>'
 					break;
 				case 2:
 					html = `

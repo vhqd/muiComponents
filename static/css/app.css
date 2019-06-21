@@ -8,8 +8,7 @@ p {
 	text-indent: 22px;
 }
 
-.mui-content,
-#tabbar {
+.mui-content,#tabbar {
 	height: 100%;
 }
 
@@ -54,6 +53,6 @@ p {
 }
 
 .oa-contact-name,
-oa-contact-position {
+.oa-contact-position {
 	float: left;
 }

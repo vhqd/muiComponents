@@ -1,10 +1,15 @@
 var frontMode = "dev";
 var frontLocalUrl = "/" + window.location.pathname.split("/")[1];
+var pluginsUrl = "resources/plugins/";
+var staticUrl = "static/js/";
+
 var requireConfig = {
 	paths : {
-		"mui":"static/js/mui.min",
+		"mui":staticUrl+"mui.min",
+		"zepto":staticUrl+"zepto.min",
 		"index":"static/index",
-		"listviews" : "resources/plugins/bnc-list-default/bnc-list-default",
+		"base":staticUrl+"base",
+		"listviews" : pluginsUrl+"bnc-list-default/bnc-list-default",
 	}
 }
 /**
@@ -14,7 +19,7 @@ require.config(requireConfig);
 /**
  * require 加载默认组件
  */
-var defaultLoad = ["listviews","mui","index"];
+var defaultLoad = ["listviews","mui","index","base","zepto"];
 require(defaultLoad, function(listviews,mui,index) {
 	console.log("默认加载了以下模块:" + JSON.stringify(defaultLoad));
 });
