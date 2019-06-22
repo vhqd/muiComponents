@@ -5,19 +5,31 @@
 			"components/a.html",
 			"components/embed.html",
 			"resources/plugins/embed.html",
-			"resources/plugins/bnc-alert/testAlert.html"
+			"resources/plugins/bnc-alert/testAlert.html",
+			"tab-webview-subpage-about.html",
+			"tab-webview-subpage-setting.html",
+			"tab-webview-subpage-chat.html",
+			"tab-webview-subpage-contact.html"
 		],
 		"resources": [
 			"js/mui.min.js",
 			"css/mui.min.css",
 			"static/js/mui.min.js",
 			"static/js/require.min.js",
-			"static/css/mui.min.css"
+			"static/css/mui.min.css",
+			"tab-webview-subpage-about.html",
+			"tab-webview-subpage-chat.html"
 		]
 	},
 	"resources/plugins/bnc-alert/testAlert.html": {
 		"resources": [
 			"/main.js"
+		]
+	},
+	"tab-webview-subpage-about.html": {
+		"refer": [
+			"resources/plugins/embed.html",
+			"resources/plugins/bnc-alert/testAlert.html"
 		]
 	}
 }
