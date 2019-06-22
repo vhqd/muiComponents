@@ -4,7 +4,8 @@
 			"a.html",
 			"components/a.html",
 			"components/embed.html",
-			"resources/plugins/embed.html"
+			"resources/plugins/embed.html",
+			"resources/plugins/bnc-alert/testAlert.html"
 		],
 		"resources": [
 			"js/mui.min.js",
@@ -12,6 +13,11 @@
 			"static/js/mui.min.js",
 			"static/js/require.min.js",
 			"static/css/mui.min.css"
+		]
+	},
+	"resources/plugins/bnc-alert/testAlert.html": {
+		"resources": [
+			"/main.js"
 		]
 	}
 }

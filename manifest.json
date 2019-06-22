@@ -140,8 +140,16 @@
 					"a.html",
 					"components/a.html",
 					"components/embed.html",
-					"resources/plugins/embed.html"
+					"resources/plugins/embed.html",
+					"resources/plugins/bnc-alert/testAlert.html"
 				],
+				"priority": 0
+			},
+			"resources/plugins/bnc-alert/testAlert.html": {
+				"resources": [
+					"/main.js"
+				],
+				"refer": [],
 				"priority": 0
 			}
 		},
