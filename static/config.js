@@ -9,7 +9,7 @@ var requireConfig = {
 		"zepto":staticUrl+"zepto.min",
 		"index":"index",
 		"base":staticUrl+"base",
-		"listviews" : pluginsUrl+"bnc-list-default/bnc-list-default",
+		"bncList" : pluginsUrl+"bnc-list/bnc-list",
 		"bncalert" : pluginsUrl+"bnc-alert/bnc-alert",
 		"test":"test"
 	},

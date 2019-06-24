@@ -1,16 +1,16 @@
 var index = 0;
 
 function compDialog() {
-	require(["listviews", "mui", "zepto", "base"], function(listviews, mui, $, base) {
-		/*	console.log(listviews.init({},1));
+	require(["bncList", "mui", "zepto", "base"], function(bncList, mui, $, base) {
+		/*	console.log(bncList.init({},1));
 			console.log('=======================================');
-			console.log(listviews.init({},2));
+			console.log(bncList.init({},2));
 			console.log('=======================================');
-			console.log(listviews.init({},3));*/
+			console.log(bncList.init({},3));*/
 		$("#list-box").empty();
-		$("#list-box").append(listviews.init({}, 1, index));
-		$("#list-box").append(listviews.init({}, 2, index));
-		mui("#list-box")[0].insertAdjacentHTML('beforeend', listviews.init({}, 3, index));
+		$("#list-box").append(bncList.init({}, 1, index));
+		$("#list-box").append(bncList.init({}, 2, index));
+		mui("#list-box")[0].insertAdjacentHTML('beforeend', bncList.init({}, 3, index));
 		index++;
 		mui.ajax({
 			url: 'http://yapi.demo.qunar.com/mock/65528/api/login',
