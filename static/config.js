@@ -11,6 +11,7 @@ var requireConfig = {
 		"base":staticUrl+"base",
 		"bncList" : pluginsUrl+"bnc-list/bnc-list",
 		"bncalert" : pluginsUrl+"bnc-alert/bnc-alert",
+		"bncbuttons":pluginsUrl+"bnc-buttons/bnc-buttons",
 		"test":"test"
 	},
 	shim : {

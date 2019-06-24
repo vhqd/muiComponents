@@ -1,7 +1,6 @@
 /**
  * 常用的弹框组件
- * @author helijun
- * @return {[]} [depend jquery]
+ * @return {[]} [depend zepto]
  */
 define(["zepto"], function($) {
 	var alert = function(opts) {

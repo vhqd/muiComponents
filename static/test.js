@@ -58,12 +58,12 @@ function goAlert() {
 
 	})
 }
-require(["bncalert", "zepto"], function(bnc, $) {
+require(["bncalert", "zepto"], function(bncAlert, $) {
 	$("body div").on('click', '.alert', function() {
 		var $this = $(this);
 		var type = $this.attr('data-flag');
 		console.log(type);
-		bnc({
+		bncAlert({
 			content: '<h1 style="display:flex;justify-content:center;">我是弹框</h1>',
 			effect: type,
 			blankclose: true,
@@ -71,6 +71,13 @@ require(["bncalert", "zepto"], function(bnc, $) {
 		})
 
 	})
+})
+
+require(["bncbuttons"],function(bncBtn){
+		bncBtn({
+			soltid:'padded-box',
+			content:"按钮测试"
+		})
 })
 /*function a(){
 	require(["bncalert","zepto"],function(bnc,$){
